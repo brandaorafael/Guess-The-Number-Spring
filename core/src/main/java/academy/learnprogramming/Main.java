@@ -31,9 +31,6 @@ public class Main {
         // get the Game Bean from context (container)
         Game game = context.getBean(Game.class);
 
-        // call reset method
-        game.reset();
-
         // close context
         context.close();
     }
