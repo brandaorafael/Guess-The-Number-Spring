@@ -24,7 +24,6 @@ public class GameImpl implements Game {
     private boolean validNumberRange = true;
 
 
-
     @PostConstruct
     @Override
     public void reset() {

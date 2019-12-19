@@ -1,5 +1,7 @@
-package academy.learnprogramming;
+package academy.learnprogramming.config;
 
+import academy.learnprogramming.MessageGenerator;
+import academy.learnprogramming.MessageGeneratorImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
