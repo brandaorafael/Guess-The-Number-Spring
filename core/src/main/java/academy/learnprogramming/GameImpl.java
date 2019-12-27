@@ -13,12 +13,8 @@ public class GameImpl implements Game {
 
     private static final Logger log = LoggerFactory.getLogger(GameImpl.class);
 
-    @Autowired
-    private NumberGenerator numberGenerator;
-
-    @Autowired
-    @GuessCount
-    private int guessCount;
+    private final NumberGenerator numberGenerator;
+    private final int guessCount;
 
     private int number;
     private int guess;
@@ -27,6 +23,11 @@ public class GameImpl implements Game {
     private int remainingGuesses;
     private boolean validNumberRange = true;
 
+    @Autowired
+    public GameImpl(NumberGenerator numberGenerator, @GuessCount int guessCount) {
+        this.numberGenerator = numberGenerator;
+        this.guessCount = guessCount;
+    }
 
     @PostConstruct
     @Override
