@@ -1,4 +1,4 @@
-package academy.learnprogramming.console;
+package academy.learnprogramming;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
