@@ -5,6 +5,8 @@
     <div align="center">
         <h1>Welcome to the number game!</h1>
         <h3><a th:text="Play" th:href="@{__${T(academy.learnprogramming.util.GameMappings).PLAY}__}"/></h3>
+
+        <footer th:replace="~{fragments/footer::footerFragment}"/>
     </div>
 </body>
 </html>
