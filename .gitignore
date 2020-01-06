@@ -26,6 +26,7 @@ hs_err_pid*
 bin
 target
 core/target
+console/target
 .classpath
 .project
 .settings
