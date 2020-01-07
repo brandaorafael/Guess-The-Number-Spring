@@ -1,10 +1,18 @@
 <thlogic>
-    <attr sel="#headId" th:replace="~{fragments/head::headFragment}"/>
-    <attr sel="#game-title" th:text="#{game.title}"/>
-    <attr sel="#enter-guess-label" th:text="#{game.enterGuess}"/>
-    <attr sel="#submit" th:value="#{game.submit}"/>
-    <attr sel="#main-message" th:text="${__${T(academy.learnprogramming.util.AttributeNames).MAIN_MESSAGE}__}"/>
-    <attr sel="#result-message" th:text="${__${T(academy.learnprogramming.util.AttributeNames).RESULT_MESSAGE}__}"/>
-    <attr sel="#game-form" th:action="@{__${T(academy.learnprogramming.util.GameMappings).PLAY}__}"/>
-    <attr sel="#footerId" th:replace="~{fragments/footer::footerFragment}"/>
+    <attr sel="#headId"
+          th:replace="~{fragments/head::headFragment}"/>
+    <attr sel="#game-title"
+          th:text="#{game.title}"/>
+    <attr sel="#enter-guess-label"
+          th:text="#{game.enterGuess}"/>
+    <attr sel="#submit"
+          th:value="#{game.submit}"/>
+    <attr sel="#main-message"
+          th:text="${__${T(academy.learnprogramming.util.AttributeNames).MAIN_MESSAGE}__}"/>
+    <attr sel="#result-message"
+          th:text="${__${T(academy.learnprogramming.util.AttributeNames).RESULT_MESSAGE}__}"/>
+    <attr sel="#game-form"
+          th:action="@{__${T(academy.learnprogramming.util.GameMappings).PLAY}__}"/>
+    <attr sel="#footerId"
+          th:replace="~{fragments/footer::footerFragment}"/>
 </thlogic>
